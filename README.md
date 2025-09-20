@@ -56,16 +56,13 @@ Add screenshots or a short GIF to the repo and update the links:
 
 ```mermaid
 flowchart LR
-  U[User: text &/or image] --> UI[Streamlit Chat UI]
-  UI -->|query| RET[Retriever]
-  subgraph Embeddings Store
-    IE[Image embeddings (CLIP)]
-    TE[Text embeddings (Sentence-Transformers)]
-  end
-  RET --> IE
-  RET --> TE
-  RET -->|Top-K items| JOIN[Join with Catalog Metadata]
-  JOIN --> LLM[Chat LLM (TinyLlama or GPT2-small)]
+  U[User] --> UI[Streamlit Chat UI]
+  UI --> RET[Retriever]
+  RET --> IE[Image Embeddings]
+  RET --> TE[Text Embeddings]
+  IE --> JOIN[Top-K Items + Metadata]
+  TE --> JOIN
+  JOIN --> LLM[Chat LLM]
   LLM --> UI
 ```
 
