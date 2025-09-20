@@ -1,0 +1,24 @@
+# Core
+numpy==1.26.4
+pandas==2.2.2
+tqdm==4.66.4
+
+# Deep learning / models
+torch==2.3.0
+torchvision==0.18.0
+transformers==4.40.1
+sentence-transformers==2.7.0
+safetensors==0.4.3
+
+# Imaging
+Pillow==10.3.0
+
+# Web UI
+streamlit==1.34.0
+
+# Kaggle API (for optional dataset download script)
+kaggle==1.6.14
+
+# NOTE:
+# - FAISS is optional and can be tricky on Windows. If you're on Linux and want faster search:
+# faiss-cpu==1.7.4

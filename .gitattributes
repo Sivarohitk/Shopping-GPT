@@ -1,2 +1,35 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize line endings for text
+* text=auto eol=lf
+# Treat these as text (nice diffs)
+*.py   text
+*.md   text
+*.txt  text
+*.csv  text
+*.json text
+*.yml  text
+*.yaml text
+*.toml text
+# Treat these as binary (avoid broken diffs)
+*.npy  binary
+*.npz  binary
+*.pt   binary
+*.bin  binary
+*.onnx binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.webp binary
+# --- OPTIONAL: Git LFS for medium assets (requires `git lfs install`) ---
+# Uncomment if you do want to version some images/arrays via LFS:
+# *.jpg  filter=lfs diff=lfs merge=lfs -text
+# *.jpeg filter=lfs diff=lfs merge=lfs -text
+# *.png  filter=lfs diff=lfs merge=lfs -text
+# *.webp filter=lfs diff=lfs merge=lfs -text
+# *.npy  filter=lfs diff=lfs merge=lfs -text
+# *.pt   filter=lfs diff=lfs merge=lfs -text
+data/processed/transactions_sample.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/customers_sample.csv filter=lfs diff=lfs merge=lfs -text
+
+
+!data/processed/customers_sample.csv
+!data/processed/transactions_sample.csv

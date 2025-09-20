@@ -1,0 +1,50 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Native build artifacts
+*.so
+*.dylib
+
+# ---------- Virtual envs ----------
+.venv/
+venv/
+env/
+.conda/
+pip-wheel-metadata/
+
+# ---------- IDE / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------- Streamlit ----------
+.streamlit/
+.secrets/
+.streamlit/secrets.toml
+
+# ---------- Project data (keep big stuff out of Git) ----------
+data/raw/
+data/processed/images/
+data/interactions/
+data/embeddings/*.npy
+data/embeddings/*.npz
+data/embeddings/*.json
+models/
+checkpoints/
+logs/
+
+# If you keep only tiny sample CSVs, allow them explicitly:
+!data/processed/*.csv
+!data/processed/*_sample.csv
+
+# ---------- Kaggle ----------
+.kaggle/
+kaggle.json
+
+# ---------- Misc ----------
+*.log
+*.tmp
