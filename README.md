@@ -34,8 +34,6 @@ Add screenshots or a short GIF to the repo and update the links:
 ![Home](docs/screenshot_home.png)
 ![Chat](docs/screenshot_chat.png)
 
-```
-
 ---
 
 ## 🧭 Table of Contents
@@ -253,7 +251,7 @@ This project is released under the [MIT License](LICENSE).
 ## 🙏 Acknowledgements
 
 - **Hugging Face**: Transformers, Sentence-Transformers, and the TinyLlama chat model.
-- **Open source community** for CLIP and Streamlit.
+- **Open-source community** for CLIP and Streamlit.
 - Sample dataset inspiration: **H&M Personalized Fashion Recommendations (Kaggle)**.
 
 ---
