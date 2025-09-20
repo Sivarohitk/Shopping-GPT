@@ -31,9 +31,9 @@ Add screenshots or a short GIF to the repo and update the links:
 - `docs/screenshot_home.png`
 - `docs/screenshot_chat.png`
 
-```text
 ![Home](docs/screenshot_home.png)
 ![Chat](docs/screenshot_chat.png)
+
 ```
 
 ---
